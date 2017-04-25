@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.2.6" %}
-{% set sha256 = "dd6df8c00d635364739eca5948f3910ba674c6914d9f1dddab66fb058b88fa7e" %}
+{% set version = "0.2.7" %}
+{% set sha256 = "991fde69400a435b2189e0f620871c8758bb8937c83c092b3e735e8236ccf8cd" %}
 
 package:
   name: {{ name|lower }}
@@ -37,9 +37,9 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-timeseries
-  license: AGPL-3.0
+  license: CC-BY-NC-3.0
   summary: 'Orange3 add-on for exploring time series and sequential data.'
-  license_family: AGPL
+  license_family: Other
   doc_url: http://orange3-timeseries.readthedocs.io
   dev_url: https://github.com/biolab/orange3-timeseries
 
