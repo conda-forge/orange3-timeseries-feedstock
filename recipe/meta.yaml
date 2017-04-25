@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "66ddbd9569ab661ec8c5b14a7b607813f53bac5a7e32b6c03ce3d193ca8ecd96" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "607e609efd32cd2a6f2140c33367dd240bbea001504594a7e9980337bd9947a9" %}
 
 package:
   name: {{ name|lower }}
