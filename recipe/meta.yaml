@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "607e609efd32cd2a6f2140c33367dd240bbea001504594a7e9980337bd9947a9" %}
+{% set version = "0.3.2" %}
+{% set sha256 = "8a3ad49f22646aeccd31cd1ffa1cc71be320388e45012b490547440b564c3d31" %}
 
 package:
   name: {{ name|lower }}
@@ -10,8 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - skip-symlinking-datasets.patch
 
 build:
   number: 0
