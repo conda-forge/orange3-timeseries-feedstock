@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.3" %}
-{% set sha256 = "a6538bbc071fbb8c0d1ddf57a2220624631ba79d9b1e5257d932892b8f483bc8" %}
+{% set version = "0.3.4" %}
+{% set sha256 = "b35ef1b44f88fd62db2c0369b07784fcb1215cac91543987804b1820e583b686" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   skip: True  # [py2k]
 
