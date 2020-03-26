@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.4" %}
-{% set sha256 = "b35ef1b44f88fd62db2c0369b07784fcb1215cac91543987804b1820e583b686" %}
+{% set version = "0.3.5" %}
+{% set sha256 = "ec656362b02fe6a88f1246bbfabba32e917f9714bc1ff4e613b1395e2f4526ce" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
-  skip: True  # [py2k]
+  skip: true  # [py2k]
 
 requirements:
   build:
@@ -36,7 +36,7 @@ test:
 about:
   home: https://github.com/biolab/orange3-timeseries
   license: CC-BY-NC-3.0
-  summary: 'Orange3 add-on for exploring time series and sequential data.'
+  summary: Orange3 add-on for exploring time series and sequential data.
   license_family: Other
   doc_url: http://orange3-timeseries.readthedocs.io
   dev_url: https://github.com/biolab/orange3-timeseries
