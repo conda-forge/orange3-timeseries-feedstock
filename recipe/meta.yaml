@@ -17,6 +17,7 @@ build:
   skip: true  # [py2k]
 
 requirements:
+
   build:
     - python
     - setuptools
@@ -28,6 +29,7 @@ requirements:
     - pandas
     - numpy
     - scipy >=0.17
+    - more-itertools
 
 test:
   imports:
