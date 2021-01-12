@@ -1,6 +1,6 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.7" %}
-{% set sha256 = "750d1549154a54ea931b83db1dfd978ad80c270fe02f30b8692837508dd0de58" %}
+{% set version = "0.3.8" %}
+{% set sha256 = "e3347c2933b4e8023884ccb2b7de92b72ff1bd09730a5d1d746db08b737aaaf2" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
 
 requirements:
 
-  build:
+  host:
     - python
     - setuptools
 
