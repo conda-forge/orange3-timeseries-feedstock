@@ -1,29 +1,26 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.10" %}
-{% set sha256 = "61b30f6dd6d17237c98a21a2fbedb14d3cec4fca7949b46c4cdc238276a72305" %}
+{% set version = "0.3.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 0964e5daccf91588f39e245cc4ef58118bd73cb33faef53f14e6eb46ddb172b5
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  skip: true  # [py2k]
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
 
 requirements:
-
   host:
-    - python
+    - python >=3.6
     - setuptools
-
+    - pip
   run:
-    - python
+    - python >=3.6
     - orange3
     - statsmodels >=0.6.1
     - pandas
@@ -46,6 +43,5 @@ about:
 extra:
   recipe-maintainers:
     - astaric
-    - kernc
     - ajdapretnar
     - primozgodec
