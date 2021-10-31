@@ -1,5 +1,5 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.11" %}
+{% set version = "0.3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0964e5daccf91588f39e245cc4ef58118bd73cb33faef53f14e6eb46ddb172b5
+  sha256: 855d911634853afb05264730f3b8a11ac5697d70c9aea995243e1c48741080c0
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -22,11 +22,12 @@ requirements:
   run:
     - python >=3.6
     - orange3
-    - statsmodels >=0.6.1
+    - statsmodels >=0.10.0,<0.13.0
     - pandas
     - numpy
     - scipy >=0.17
     - more-itertools
+    - python-dateutil
 
 test:
   imports:
@@ -45,3 +46,4 @@ extra:
     - astaric
     - ajdapretnar
     - primozgodec
+    - markotoplak
