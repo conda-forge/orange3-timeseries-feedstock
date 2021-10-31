@@ -22,11 +22,12 @@ requirements:
   run:
     - python >=3.6
     - orange3
-    - statsmodels >=0.6.1
+    - statsmodels >=0.10.0,<0.13.0
     - pandas
     - numpy
     - scipy >=0.17
     - more-itertools
+    - python-dateutil
 
 test:
   imports:
