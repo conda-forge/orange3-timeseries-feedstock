@@ -1,5 +1,5 @@
 {% set name = "Orange3-Timeseries" %}
-{% set version = "0.3.12" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 855d911634853afb05264730f3b8a11ac5697d70c9aea995243e1c48741080c0
+  sha256: 5b51ca7c471bbd5e83bed6c16fb9281ceb9891fe2b2ac63d56a10cf032904978
 
 build:
   number: 0
