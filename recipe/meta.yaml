@@ -21,14 +21,15 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - Orange3 >=3.32.0
+    - Orange3 >=3.33.0
     - statsmodels >=0.13.0
     - pandas
     - pandas-datareader
     - numpy
     - scipy >=0.17
     - more-itertools
-    - pyqtgraph >=0.12.2,!=0.12.4
+    - pyqtgraph >=0.13.1
+    - python-dateutil
 
 test:
   imports:
