@@ -1,11 +1,11 @@
-About orange3-timeseries
-========================
+About orange3-timeseries-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-timeseries-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/biolab/orange3-timeseries
 
 Package license: CC-BY-NC-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-timeseries-feedstock/blob/main/LICENSE.txt)
 
 Summary: Orange3 add-on for exploring time series and sequential data.
 
