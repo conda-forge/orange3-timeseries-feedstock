@@ -23,13 +23,15 @@ requirements:
     - python >=3.6
     - Orange3 >=3.33.0
     - statsmodels >=0.13.0
+    - python-dateutil
     - pandas
     - pandas-datareader
     - numpy
-    - scipy >=0.17
+    - scipy >=1.9.2
     - more-itertools
-    - pyqtgraph >=0.13.1
     - python-dateutil
+    - yfinance
+    - pyqtgraph >=0.13.1
 
 test:
   imports:
