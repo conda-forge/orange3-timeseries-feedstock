@@ -25,12 +25,12 @@ requirements:
     - statsmodels >=0.13.0
     - python-dateutil
     - pandas
-    - pandas-datareader
+    - pandas-datareader  # [not osx]
     - numpy
     - scipy >=1.9.2
     - more-itertools
     - python-dateutil
-    - yfinance
+    - yfinance  # [not osx]
     - pyqtgraph >=0.13.1
 
 test:
