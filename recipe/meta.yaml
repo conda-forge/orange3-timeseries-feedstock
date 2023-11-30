@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python  # >=3.6
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python  # >=3.6
     - Orange3 >=3.33.0
     - statsmodels >=0.13.0
     - python-dateutil
