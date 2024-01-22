@@ -12,15 +12,15 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  # noarch: python # temporarily disable, reenable when removed osx selectors in requirements
+  noarch: python
 
 requirements:
   host:
-    - python  # >=3.6
+    - python >=3.9
     - setuptools
     - pip
   run:
-    - python  # >=3.6
+    - python >=3.9
     - Orange3 >=3.33.0
     - statsmodels >=0.13.0
     - python-dateutil
